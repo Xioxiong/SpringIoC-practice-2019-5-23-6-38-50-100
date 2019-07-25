@@ -4,6 +4,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="helloworld" class="com.example.SpringIoCpractice.HelloWorld">
 
+                <!-- 调用setMsg()方法为msg属性注入参数值 -->
+                <property name="hello" value="Hello world!"/>
+        </bean>
     <!--Code here-->
 </beans>
